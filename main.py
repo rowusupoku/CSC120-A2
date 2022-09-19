@@ -12,6 +12,8 @@ from procedural_resale_shop import buy, update_price, sell, print_inventory, ref
     explicit data types (str, int, etc.) listed in a python function. We're 
     going to go the extra step, because when we get to Java it'll be required!
 """
+#Is this the helper function? 
+
 def create_computer(description: str,
                     processor_type: str,
                     hard_drive_capacity: int,
@@ -37,6 +39,9 @@ def main():
         1024, 64,
         "macOS Big Sur", 2013, 1500
     )
+    """
+        computer = Computer("Mac Pro (Late 2013)", "3.5 GHc 6-Core Intel Xeon E5", 1024, 64, "macOS Big Sur", 2013, 1500)
+    """
 
     # Print a little banner
     print("-" * 21)
