@@ -29,15 +29,16 @@ class Computer:
         self.__year_made = year_made
         self.__price = price
         
-    def createComputer(self, )
-        return {'description': description,
+        
+        def create_computer(self)  -> str:
+            return {'description': description,
             'processor_type': processor_type,
             'hard_drive_capacity': hard_drive_capacity,
             'memory': memory,
             'operating_system': operating_system,
             'year_made': year_made,
             'price': price
-    }
+            } 
 
     # What methods will you need?
     # A method that stores information about the Computer
