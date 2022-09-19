@@ -1,30 +1,24 @@
 # Import a few useful containers from the typing module
 from calendar import c
+#from typing import Dict, Union
 from cgi import print_exception
 from computer import Computer
-from typing import Dict, Union
+
 
 # Imported function from procedural_resale_shop.py
 from procedural_resale_shop import buy, update_price, sell, print_inventory, refurbish
 
 class ResaleShop:
-
-    # What attributes will it need?
     
-
-    # - storing the inventory for the store
-    # - buying a computer (add to inventory)
-    # - selling a computer (remove from inventory)
-    # - updating a computer's price
-    # - refurbishing a computer
-    
-    # How will you set up your constructor?
-    # Remember: in python, all constructors have the same name (__init__)
-    def __init__(self, banner, inventory):
+    def __init__(self, itemID, inventory:dict, refurbish, buy, sell, updatePrice, banner):
         self.__banner = banner
-        self.__inventory = inventory
+        self.__refurbish = refurbish
+        self.__buy = buy
+        self.__sell = sell
+        self.__updatePrice = updatePrice 
+        self.__itemID = itemID
+        self.__inventory = [int, computer] = {}
         
-        pass # You'll remove this when you fill out your constructor
 
     def makeBanner(self, ) -> str:
         # Print a little banner
@@ -75,7 +69,3 @@ class ResaleShop:
         print_inventory()
         print("Done.\n")
 
-        
-    # What methods will you need?
-    # A method that stores the inventory of the store
-    #
