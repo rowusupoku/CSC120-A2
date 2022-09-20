@@ -1,6 +1,9 @@
 # Import a few useful containers from the typing module
 from calendar import c
 from typing import Dict, Union
+from computer import Computer
+from oo_resale_shop import ResaleShop
+
 
 # Import the functions we wrote in procedural_resale_shop.py
 from procedural_resale_shop import buy, update_price, sell, print_inventory, refurbish
@@ -14,6 +17,7 @@ from procedural_resale_shop import buy, update_price, sell, print_inventory, ref
 """
 #Is this the helper function? 
 
+"""
 def create_computer(description: str,
                     processor_type: str,
                     hard_drive_capacity: int,
@@ -29,9 +33,10 @@ def create_computer(description: str,
             'year_made': year_made,
             'price': price
     }
+"""
 
 def main():
-    
+    """ 
     # First, let's make a computer
     computer = create_computer(
         "Mac Pro (Late 2013)",
@@ -40,8 +45,9 @@ def main():
         "macOS Big Sur", 2013, 1500
     )
     """
-        computer = Computer("Mac Pro (Late 2013)", "3.5 GHc 6-Core Intel Xeon E5", 1024, 64, "macOS Big Sur", 2013, 1500)
-    """
+    
+    computer = Computer("Mac Pro (Late 2014)", "3.5 GHc 6-Core Intel Xeon E5", 1024, 64, "macOS Big Sur", 2013, 1500)
+    
 
     # Print a little banner
     print("-" * 21)
